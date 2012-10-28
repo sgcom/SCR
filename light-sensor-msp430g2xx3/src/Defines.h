@@ -17,7 +17,6 @@
 // Port 1
 //
 #define RDRIVE_OUT        BIT5
-#define TEST_INPUT        BIT5
 //... + Uart and sensor... + LEDs...
 //
 // Port 2

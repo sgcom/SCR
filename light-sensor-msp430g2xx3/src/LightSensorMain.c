@@ -142,18 +142,11 @@ void measureAndSendR()
     dataBuffer[TXD_HEADER_SIZE+DATA_MODALITY*dataIdx+0] = OverflowCnt-1;                // overflow count, 0-based
     dataBuffer[TXD_HEADER_SIZE+DATA_MODALITY*dataIdx+1] = (DischargeTime >> 8) & 0xff;  // Discharge Time MSB
     dataBuffer[TXD_HEADER_SIZE+DATA_MODALITY*dataIdx+2] = DischargeTime & 0xff;         // Discharge Time LSB
-//    dataBuffer[TXD_HEADER_SIZE+DATA_MODALITY*dataIdx+3] = (v >> 8) & 0xff;              // battery voltage*100 MSB
-//    dataBuffer[TXD_HEADER_SIZE+DATA_MODALITY*dataIdx+4] = v & 0xff;                     // battery voltage*100 LSB
-//    dataBuffer[TXD_HEADER_SIZE+DATA_MODALITY*dataIdx+5] = tempC;                        // internal MCU temperature *C
     dataIdx++;
     if( dataIdx == BATCH_SIZE ) {
         // if the data buffer is full, then send the data frame to the base station
-//        if( TRUE /*optionally could use different logic*/ ) {
-//        dataBuffer[TXD_HEADER_SIZE+DATA_LENGTH+0] = 0xFF;             // reserved
-//        dataBuffer[TXD_HEADER_SIZE+DATA_LENGTH+1] = 0xFF;             // reserved
         sendData();
         dataIdx = 0;
-//        }
     }
     GREEN_LED_OFF();
 }
