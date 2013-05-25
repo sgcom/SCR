@@ -1,5 +1,5 @@
-Using R to visualize the light sensor data as time series - capturedData_3.csv
-==========================================================================
+####Using R to visualize the light sensor data as time series - capturedData_3.csv
+
 
 This R script creates a plot from data captured by the light sensor over a period of 13 minutes or so. The first part (about first half) is result of ambient light in a room, slightly decreasing over time. Then the sensor was moved under a fluorescent office lamp and the lamp was turned on. At taht time the sensor has been exposed to combination of ambient light and light from the lamp.
 
