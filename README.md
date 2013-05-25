@@ -1,9 +1,8 @@
-SCR - Slope Conversion of Resistance for resistance-based sensors
-=================================================================
+###SCR - Slope Conversion of Resistance for resistance-based sensors
 
 This project explores the Slope Conversion of Resistance method to 
 implement a "Light Sensor" - a microcontroller (MSP430) based node 
-that approximately measures the light intensity. More specifically, 
+that measures the light intensity over time. More specifically, 
 it has been used to build a sunlight measuring device that helps 
 determine how many hours of sunlight certain location spot gets per 
 day.
